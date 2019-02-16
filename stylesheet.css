@@ -11,16 +11,20 @@ a {
   text-decoration: none;
 }
 
-.header-logo{
+header p{
   padding: 60px 10px;
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: #000;
+  position: absolute;
+}
+.logo-image-mask{
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
 }
 .logo-image{
   height: 400px;
   width: 100%;
-  background-color:rgba(0,0,0,0.1);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,6 +41,23 @@ a {
   color: #fff;
   font-weight: bold;
 }
+
+.login-area{
+  display: block;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  font-size: 17px;
+  background: #62c1ce;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+.login-area p{
+  margin: 0;
+  padding: 0;
+}
 .menu-list ul{
   padding: 0;
 }
@@ -48,8 +69,22 @@ a {
   line-height: 1.5;
   padding: 0.5em;
   list-style-type: none!important;/*ポチ消す*/
-  display: inlineblock;
+  display: block;
 }
+.menu-button-list ul{
+  padding: 0;
+}
+.menu-button-list ul li {
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;/*左側の線*/
+  background: #f1f8ff;/*背景色*/
+  margin-bottom: 3px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  display: block;
+}
+
 .main-block{
   display: flex;
 }
@@ -59,6 +94,16 @@ a {
 .main-contents{
   flex: 1;
 }
+.container{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: double 5px #4ec4d3;
+}
+.container h1 p {
+  margin: 0;
+  padding: 0;
+}
+
 .bottom-contents{
   display: flex;
 }
