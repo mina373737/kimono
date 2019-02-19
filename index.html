@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang=ja>
   <head>
     <meta charaset="utf-8">
     <title>着物通販ショップ「きもの屋さん」</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
-<header>
-  <div class="header">
-    <div class="logo-image">
-      <div class="logo-image-mask">
-        <p>着物通販ショップ「きもの屋さん」</p>
-      </div>
-    </div>
-    <div class="header-list">
-        <ul>
-          <li><a href="#">マイページ</a></li>
-          <li><a href="#">カゴの中を見る</a></li>
-        </ul>
-      </div>
-  </div>
-</header>
 
 
 <body>
-  <div class="main-block">
-    <div class="main">
-      <div class="menu-list">
+  <!-- このラッパーで全体の幅を指定 -->
+  <div id="wrap">
+
+    <header>
+      <div class="header">
+        <div class="logo-image">
+          <div class="logo-image-mask">
+            <p>着物通販ショップ「きもの屋さん」</p>
+          </div>
+        </div>
+        <div class="header-list">
+            <ul>
+              <li><a href="#">マイページ</a></li>
+              <li><a href="#">カゴの中を見る</a></li>
+            </ul>
+          </div>
+      </div>
+    </header>
+
+<!-- 左側サイドナビ -->
+    <div id="sidenavi">
+      <div id="guide_area">
         <ul>
           <li><a href="#">Topページ</a></li>
           <li><a href="#">販売商品一覧</a></li>
@@ -37,7 +43,7 @@
         </ul>
       </div>
 
-      <div class="login-area">
+      <div id="login-area">
           <form>
             <p>ログイン</p>
             <p>メールアドレス</p>
@@ -48,8 +54,8 @@
           </form>
         </div>
 
-      <div>
-        <div class="menu-button-list">
+
+        <div id="button_area">
           <ul>
             <li><a href="#">よくあるご質問</a></li>
             <li><a href="#">浴衣特集</a></li>
@@ -58,12 +64,14 @@
             <li><a href="#">あると便利な小物</a></li>
           </ul>
         </div>
-    </div>
-    </div>
+      </div>
+      <!-- close sidenavi -->
 
-  <div class="main-contents">
+<!-- 右側コンテンツ -->
+  <div id="contents">
     <div class="container">
       <h1>春の新作きもの！</h1>
+        <p>春に新作が入荷いたします。</p>
     </div>
     <div class="container">
       <h1>発送予定のお知らせ</h1>
@@ -71,7 +79,7 @@
     </div>
 
     <div class="container">
-      <h1>当店では、人気デザイナーがデザインした着物を販売しています</h1>
+      <h1>人気デザイナーがデザインした着物を販売しています</h1>
       <p>人気デザイナー「kimono」さんがデザインした着物を数量限定で販売中です。</p>
     </div>
     <div class="container">
@@ -79,30 +87,27 @@
       <p>「着物って、洗うのが面倒…」「クリーニング代が毎回かかるのが悩み」そんな方には、洗える着物が便利です。当店では、洗える着物も種類豊富に取り揃えております。</p>
     </div>
   </div>
-</div>
 
   <div class="bottom-contents">
-    <div class="bottom-left-contents">
+    <div id="col-left">
       <div class="card-contents">
         <h1>お支払い方法</h1>
-        <h2>代引引換え</h2>
-          <p>商品発送時に現金にてご決済いただくお支払い方法です。</p>
-          <br>
-          <p>※代引手数料として、別途324円が必要となります。</p>
-          <br>
-          <p>代引引換手数料はお客様のご負担となりますのでご了承ください。</p>
-        <h2>クレジット決済</h2>
-          <p>オンラインによるリアルタイム決済です。オンライン決済の際には、クレジット決済代行会社「abc」のサイトに移動します。なお、その際にクレジットカード番号等を含むデータは、SSLよりセキュリティを確保したうえで送信されますので、安心してご利用いただけます。お支払い回数は1回とさせていただきます。ご利用いただけるカードはVISA/Masterの2種類です。</p>
-        <h2>コンビニ決済</h2>
-          <p>全国のコンビニでお支払いいただけます。商品注文後、14日以内にお近くのコンビニにてお支払い下さい。商品の発送は、お支払いが確認できてからの発送になりますので、お支払いが遅れますと商品の到着が遅れてしまいますのでご注意下さい。</p>
+          <h2>代引引換え</h2>
+            <p>商品発送時に現金にてご決済いただくお支払い方法です。</p>
+            <p>※代引手数料として、別途324円が必要となります。</p>
+            <p>代引引換手数料はお客様のご負担となりますのでご了承ください。</p>
+          <h2>クレジット決済</h2>
+            <p>オンラインによるリアルタイム決済です。オンライン決済の際には、クレジット決済代行会社「abc」のサイトに移動します。なお、その際にクレジットカード番号等を含むデータは、SSLよりセキュリティを確保したうえで送信されますので、安心してご利用いただけます。お支払い回数は1回とさせていただきます。ご利用いただけるカードはVISA/Masterの2種類です。</p>
+          <h2>コンビニ決済</h2>
+            <p>全国のコンビニでお支払いいただけます。商品注文後、14日以内にお近くのコンビニにてお支払い下さい。商品の発送は、お支払いが確認できてからの発送になりますので、お支払いが遅れますと商品の到着が遅れてしまいますのでご注意下さい。</p>
       </div>
         <div class="card-contents">
           <h1>配送・送料について</h1>
           <h2>配送</h2>
             <p>ゆうパックにて配送いたします。詳細は、「お支払い・送料について」のページをご覧ください。</p>
             <h2>送料について</h2>
-              <p>送料は、<span>北海道・九州・沖縄を除く全国540円とさせていただきます。</span></p><br>
-              <p><span>(北海道・九州・沖縄は864円)</span></p><br>
+              <p>送料は、<span>北海道・九州・沖縄を除く全国540円とさせていただきます。</span></p>
+              <p><span>(北海道・九州・沖縄は864円)</span></p>
               <p>送料の詳細については、「お支払い・送料について」のページをご覧ください。</p>
           <h2>時間指定配送可能な時間帯</h2>
         <ul>
@@ -117,7 +122,7 @@
         </div>
       </div>
 
-      <div class="bottom-right-contents">
+      <div id="col-right">
         <div class="card-contents">
           <h1>ご注文方法</h1>
           <h2>インターネットによるご注文</h2>
@@ -153,6 +158,8 @@
   <div class="copyright">
     <p>copyright©　着物通販ショップ「きもの屋さん」All right reserved.</p>
   </div>
+</div>
+<!-- close wrap -->
 
 </body>
 </html>
